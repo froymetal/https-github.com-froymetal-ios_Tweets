@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144C231778765CCCCCFF7532 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C335E77C203C259AF7A4435 /* Pods_PlatziTweets.framework */; };
+		3A80FA6E268CAB8D00A7F687 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */; };
 		3A9CD569268B6C52001533F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9CD568268B6C52001533F8 /* AppDelegate.swift */; };
-		3A9CD56B268B6C52001533F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9CD56A268B6C52001533F8 /* SceneDelegate.swift */; };
 		3A9CD56D268B6C52001533F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9CD56C268B6C52001533F8 /* ViewController.swift */; };
-		3A9CD570268B6C52001533F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9CD56E268B6C52001533F8 /* Main.storyboard */; };
 		3A9CD572268B6C59001533F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9CD571268B6C59001533F8 /* Assets.xcassets */; };
 		3A9CD575268B6C59001533F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9CD573268B6C59001533F8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A44F0915E487F237DA67581 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		2C335E77C203C259AF7A4435 /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		3A9CD565268B6C52001533F8 /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9CD568268B6C52001533F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9CD56A268B6C52001533F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A9CD56C268B6C52001533F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A9CD56F268B6C52001533F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9CD571268B6C59001533F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9CD574268B6C59001533F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9CD576268B6C59001533F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CFD21F9664104C93E727E1 /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144C231778765CCCCCFF7532 /* Pods_PlatziTweets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10C9876ED69E35499CEB64E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A44F0915E487F237DA67581 /* Pods-PlatziTweets.debug.xcconfig */,
+				77CFD21F9664104C93E727E1 /* Pods-PlatziTweets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		31D1DEAA538023DECFF0DE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C335E77C203C259AF7A4435 /* Pods_PlatziTweets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A80FA6A268CAB3400A7F687 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				3A9CD568268B6C52001533F8 /* AppDelegate.swift */,
+				3A9CD56C268B6C52001533F8 /* ViewController.swift */,
+				3A9CD571268B6C59001533F8 /* Assets.xcassets */,
+				3A9CD573268B6C59001533F8 /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		3A80FA6B268CAB4500A7F687 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A80FA6C268CAB6D00A7F687 /* Welcome */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3A80FA6C268CAB6D00A7F687 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		3A9CD55C268B6C51001533F8 = {
 			isa = PBXGroup;
 			children = (
 				3A9CD567268B6C52001533F8 /* PlatziTweets */,
 				3A9CD566268B6C52001533F8 /* Products */,
+				10C9876ED69E35499CEB64E8 /* Pods */,
+				31D1DEAA538023DECFF0DE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +105,8 @@
 		3A9CD567268B6C52001533F8 /* PlatziTweets */ = {
 			isa = PBXGroup;
 			children = (
-				3A9CD568268B6C52001533F8 /* AppDelegate.swift */,
-				3A9CD56A268B6C52001533F8 /* SceneDelegate.swift */,
-				3A9CD56C268B6C52001533F8 /* ViewController.swift */,
-				3A9CD56E268B6C52001533F8 /* Main.storyboard */,
-				3A9CD571268B6C59001533F8 /* Assets.xcassets */,
-				3A9CD573268B6C59001533F8 /* LaunchScreen.storyboard */,
+				3A80FA6B268CAB4500A7F687 /* Modules */,
+				3A80FA6A268CAB3400A7F687 /* Commons */,
 				3A9CD576268B6C59001533F8 /* Info.plist */,
 			);
 			path = PlatziTweets;
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9CD579268B6C59001533F8 /* Build configuration list for PBXNativeTarget "PlatziTweets" */;
 			buildPhases = (
+				675BDE580846693E4994E2AE /* [CP] Check Pods Manifest.lock */,
 				3A9CD561268B6C52001533F8 /* Sources */,
 				3A9CD562268B6C52001533F8 /* Frameworks */,
 				3A9CD563268B6C52001533F8 /* Resources */,
+				6EC0A8A5E59B1BE0B04DDEDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +173,53 @@
 			files = (
 				3A9CD575268B6C59001533F8 /* LaunchScreen.storyboard in Resources */,
 				3A9CD572268B6C59001533F8 /* Assets.xcassets in Resources */,
-				3A9CD570268B6C52001533F8 /* Main.storyboard in Resources */,
+				3A80FA6E268CAB8D00A7F687 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		675BDE580846693E4994E2AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlatziTweets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC0A8A5E59B1BE0B04DDEDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A9CD561268B6C52001533F8 /* Sources */ = {
@@ -139,21 +228,12 @@
 			files = (
 				3A9CD56D268B6C52001533F8 /* ViewController.swift in Sources */,
 				3A9CD569268B6C52001533F8 /* AppDelegate.swift in Sources */,
-				3A9CD56B268B6C52001533F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A9CD56E268B6C52001533F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A9CD56F268B6C52001533F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A9CD573268B6C59001533F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +363,14 @@
 		};
 		3A9CD57A268B6C59001533F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A44F0915E487F237DA67581 /* Pods-PlatziTweets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFGQTYMVM3;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +378,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = froy.com.PlatziTweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3A9CD57B268B6C59001533F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CFD21F9664104C93E727E1 /* Pods-PlatziTweets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFGQTYMVM3;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = froy.com.PlatziTweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
