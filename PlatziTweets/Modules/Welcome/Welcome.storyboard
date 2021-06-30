@@ -139,21 +139,83 @@
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="-179.46428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro-->
         <scene sceneID="oiN-fl-gxd">
             <objects>
                 <viewController id="NR2-Q9-NkE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hyy-S7-gPT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-Gi-vBF">
+                                <rect key="frame" x="0.0" y="771" width="414" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Zy9-Vn-dRg"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="i5z-Kj-Sfq">
+                                <rect key="frame" x="0.0" y="-11" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ttK-1q-kyP">
+                                        <rect key="frame" x="20" y="160" width="374" height="162"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="caC-9a-2x5">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtw-9W-DSg">
+                                                <rect key="frame" x="0.0" y="44" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4x3-sL-zHX">
+                                                <rect key="frame" x="0.0" y="88" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-xt-nwk">
+                                                <rect key="frame" x="0.0" y="132" width="374" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <state key="normal" title="Registrarse">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-5q-x5f">
+                                        <rect key="frame" x="0.0" y="771" width="414" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="bKg-st-EOg"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="QeB-Nj-rrf"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qJ6-5q-x5f" secondAttribute="bottom" id="BmN-f6-wo3"/>
+                                    <constraint firstItem="qJ6-5q-x5f" firstAttribute="trailing" secondItem="QeB-Nj-rrf" secondAttribute="trailing" id="cP7-PI-HAc"/>
+                                    <constraint firstItem="qJ6-5q-x5f" firstAttribute="leading" secondItem="QeB-Nj-rrf" secondAttribute="leading" id="eGY-bG-4n8"/>
+                                    <constraint firstItem="ttK-1q-kyP" firstAttribute="leading" secondItem="QeB-Nj-rrf" secondAttribute="leading" constant="20" id="hSg-57-0gh"/>
+                                    <constraint firstItem="QeB-Nj-rrf" firstAttribute="trailing" secondItem="ttK-1q-kyP" secondAttribute="trailing" constant="20" id="upZ-tr-GBb"/>
+                                    <constraint firstItem="ttK-1q-kyP" firstAttribute="top" secondItem="QeB-Nj-rrf" secondAttribute="top" constant="20" id="ybE-Va-oe7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4vF-K3-GtX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qh8-Gi-vBF" secondAttribute="bottom" id="7Yh-0N-tR0"/>
+                            <constraint firstItem="qh8-Gi-vBF" firstAttribute="trailing" secondItem="4vF-K3-GtX" secondAttribute="trailing" id="E1b-M6-gCY"/>
+                            <constraint firstItem="qh8-Gi-vBF" firstAttribute="leading" secondItem="4vF-K3-GtX" secondAttribute="leading" id="wqW-NC-M6w"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oDw-Pd-qRC"/>
+                    <navigationItem key="navigationItem" title="Registro" id="oDw-Pd-qRC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5g-XW-reS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="481"/>
+            <point key="canvasLocation" x="1928.985507246377" y="480.80357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xZs-xx-s6Q">
