@@ -115,6 +115,9 @@
                                         <state key="normal" title="Iniciar Sesión">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonAction" destination="7lG-8s-1GL" eventType="touchUpInside" id="2Oa-Kh-5uL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -138,7 +141,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="zjy-dS-Uh2"/>
                     <connections>
+                        <outlet property="emailTextField" destination="pol-hU-zmO" id="248-bD-wsX"/>
                         <outlet property="loginButton" destination="FXc-vx-NcC" id="3ms-hS-vH4"/>
+                        <outlet property="passwordTextField" destination="elI-1N-sTd" id="2NE-my-sA9"/>
+                        <segue destination="pGE-pv-xpG" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="zwe-zK-eYG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjG-pD-ACn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,6 +193,9 @@
                                                 <state key="normal" title="Registrarse">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerButtonAction" destination="NR2-Q9-NkE" eventType="touchUpInside" id="xQc-X3-OD3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -219,12 +228,24 @@
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="oDw-Pd-qRC"/>
                     <connections>
+                        <outlet property="emailTextField" destination="caC-9a-2x5" id="n4n-nX-geV"/>
+                        <outlet property="namesTextField" destination="dtw-9W-DSg" id="ajH-jf-Nnh"/>
+                        <outlet property="passwordTextField" destination="4x3-sL-zHX" id="14I-Wt-nym"/>
                         <outlet property="registerButton" destination="AeI-xt-nwk" id="G7o-Rg-Ojz"/>
+                        <segue destination="pGE-pv-xpG" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="cu9-hD-goQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5g-XW-reS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928.985507246377" y="480.80357142857139"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="7OH-Vc-Bob">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="pGE-pv-xpG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxf-rd-Jxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xZs-xx-s6Q">
@@ -245,6 +266,9 @@
             <point key="canvasLocation" x="-28.985507246376812" y="32.8125"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zwe-zK-eYG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
         <image name="loginBg" width="640" height="425"/>
