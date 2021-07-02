@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		144C231778765CCCCCFF7532 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C335E77C203C259AF7A4435 /* Pods_PlatziTweets.framework */; };
 		3A80C199268E95BA00840CF6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A80C198268E95BA00840CF6 /* Home.storyboard */; };
+		3A80C19C268F4FBB00840CF6 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C19B268F4FBB00840CF6 /* Endpoints.swift */; };
+		3A80C19F268F506500840CF6 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C19E268F506500840CF6 /* LoginRequest.swift */; };
+		3A80C1A1268F548500840CF6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1A0268F548500840CF6 /* LoginResponse.swift */; };
+		3A80C1A3268F54BF00840CF6 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1A2268F54BF00840CF6 /* ErrorResponse.swift */; };
+		3A80C1A5268F54D900840CF6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1A4268F54D900840CF6 /* User.swift */; };
+		3A80C1A7268F584A00840CF6 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1A6268F584A00840CF6 /* RegisterRequest.swift */; };
+		3A80C1A9268F588700840CF6 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1A8268F588700840CF6 /* RegisterResponse.swift */; };
+		3A80C1AB268F5E8200840CF6 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1AA268F5E8200840CF6 /* GeneralResponse.swift */; };
+		3A80C1AD268F606600840CF6 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1AC268F606600840CF6 /* PostRequest.swift */; };
+		3A80C1AF268F60AF00840CF6 /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1AE268F60AF00840CF6 /* PostRequestLocation.swift */; };
+		3A80C1B1268F612000840CF6 /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B0268F612000840CF6 /* PostLocation.swift */; };
+		3A80C1B3268F61E300840CF6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B2268F61E300840CF6 /* Post.swift */; };
 		3A80FA6E268CAB8D00A7F687 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */; };
 		3A80FA70268CC5F200A7F687 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80FA6F268CC5F200A7F687 /* WelcomeViewController.swift */; };
 		3A80FA72268CC60B00A7F687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80FA71268CC60B00A7F687 /* LoginViewController.swift */; };
@@ -23,6 +35,18 @@
 		0A44F0915E487F237DA67581 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		2C335E77C203C259AF7A4435 /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A80C198268E95BA00840CF6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3A80C19B268F4FBB00840CF6 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		3A80C19E268F506500840CF6 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		3A80C1A0268F548500840CF6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		3A80C1A2268F54BF00840CF6 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		3A80C1A4268F54D900840CF6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3A80C1A6268F584A00840CF6 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		3A80C1A8268F588700840CF6 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		3A80C1AA268F5E8200840CF6 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		3A80C1AC268F606600840CF6 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		3A80C1AE268F60AF00840CF6 /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
+		3A80C1B0268F612000840CF6 /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
+		3A80C1B2268F61E300840CF6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		3A80FA6F268CC5F200A7F687 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3A80FA71268CC60B00A7F687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +95,32 @@
 				3A80C198268E95BA00840CF6 /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3A80C19A268F4F8B00840CF6 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A80C19B268F4FBB00840CF6 /* Endpoints.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		3A80C19D268F504A00840CF6 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				3A80C19E268F506500840CF6 /* LoginRequest.swift */,
+				3A80C1A0268F548500840CF6 /* LoginResponse.swift */,
+				3A80C1A2268F54BF00840CF6 /* ErrorResponse.swift */,
+				3A80C1A4268F54D900840CF6 /* User.swift */,
+				3A80C1A6268F584A00840CF6 /* RegisterRequest.swift */,
+				3A80C1A8268F588700840CF6 /* RegisterResponse.swift */,
+				3A80C1AA268F5E8200840CF6 /* GeneralResponse.swift */,
+				3A80C1AC268F606600840CF6 /* PostRequest.swift */,
+				3A80C1AE268F60AF00840CF6 /* PostRequestLocation.swift */,
+				3A80C1B0268F612000840CF6 /* PostLocation.swift */,
+				3A80C1B2268F61E300840CF6 /* Post.swift */,
+			);
+			path = Modelo;
 			sourceTree = "<group>";
 		};
 		3A80FA6A268CAB3400A7F687 /* Commons */ = {
@@ -125,6 +175,8 @@
 		3A9CD567268B6C52001533F8 /* PlatziTweets */ = {
 			isa = PBXGroup;
 			children = (
+				3A80C19D268F504A00840CF6 /* Modelo */,
+				3A80C19A268F4F8B00840CF6 /* NetworkManager */,
 				3A80FA6B268CAB4500A7F687 /* Modules */,
 				3A80FA6A268CAB3400A7F687 /* Commons */,
 				3A9CD576268B6C59001533F8 /* Info.plist */,
@@ -247,10 +299,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80C19F268F506500840CF6 /* LoginRequest.swift in Sources */,
+				3A80C1AD268F606600840CF6 /* PostRequest.swift in Sources */,
+				3A80C1A7268F584A00840CF6 /* RegisterRequest.swift in Sources */,
 				3A80FA72268CC60B00A7F687 /* LoginViewController.swift in Sources */,
+				3A80C1B3268F61E300840CF6 /* Post.swift in Sources */,
 				3A80FA74268CC81F00A7F687 /* RegisterViewController.swift in Sources */,
 				3A80FA70268CC5F200A7F687 /* WelcomeViewController.swift in Sources */,
+				3A80C1AF268F60AF00840CF6 /* PostRequestLocation.swift in Sources */,
 				3A9CD56D268B6C52001533F8 /* ViewController.swift in Sources */,
+				3A80C19C268F4FBB00840CF6 /* Endpoints.swift in Sources */,
+				3A80C1A3268F54BF00840CF6 /* ErrorResponse.swift in Sources */,
+				3A80C1A1268F548500840CF6 /* LoginResponse.swift in Sources */,
+				3A80C1A9268F588700840CF6 /* RegisterResponse.swift in Sources */,
+				3A80C1B1268F612000840CF6 /* PostLocation.swift in Sources */,
+				3A80C1AB268F5E8200840CF6 /* GeneralResponse.swift in Sources */,
+				3A80C1A5268F54D900840CF6 /* User.swift in Sources */,
 				3A9CD569268B6C52001533F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

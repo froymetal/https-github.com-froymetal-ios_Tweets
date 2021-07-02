@@ -7,6 +7,11 @@
 
 import UIKit
 import NotificationBannerSwift
+//Para hacer conexiones
+import Simple_Networking
+//para mostrar indicadores de carga al usuario
+import SVProgressHUD
+
 
 class LoginViewController: UIViewController {
     //MARK: Outlets
