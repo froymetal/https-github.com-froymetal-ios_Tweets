@@ -52,8 +52,33 @@ class LoginViewController: UIViewController {
             NotificationBanner(title: "Error", subtitle: "Ingrese un Password", style: .warning).show()
             return
         }
-        //Para seguir el segue
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //Imokantar el request
+        let request = LoginRequest(email: email, password: password)
+        //Icono de carga
+        SVProgressHUD.show()
+        // Llamar a  libreria de Red
+        SN.post(endpoint: Endpoints.login,
+                model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+            //Apagar la barra de carga
+            SVProgressHUD.dismiss()
+            //Casos del enum SNResultWithEntity
+            switch response {
+            case .success(let user):
+                //lo bueno
+                NotificationBanner(subtitle: "Bienvenido \(user.user.names)", style: .success).show()
+                //Para seguir el segue
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+            case .error(let error):
+                //lo malo
+                NotificationBanner(title: "Error" ,subtitle: error.localizedDescription, style: .danger).show()
+                return
+            case .errorResult(let entity):
+                //error controlado
+                NotificationBanner(title: "Error" ,subtitle: entity.error, style: .warning).show()
+                return
+            }
+        }
+        
         // Iniciar sesion aqui
         
         
