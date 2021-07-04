@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  PlatziTweets
 //
 //  Created by Field Employee on 6/30/21.
@@ -12,33 +12,36 @@ import Simple_Networking
 //para mostrar indicadores de carga al usuario
 import SVProgressHUD
 
-class RegisterViewController: UIViewController {
+
+class LoginViewController: UIViewController {
     //MARK: Outlets
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var namesTextField: UITextField!
-
+    
     //MARK: Actions
-    @IBAction func registerButtonAction(){
+    @IBAction func loginButtonAction(){
         //funcion para quitar el teclado y quitar los focos de texto
         view.endEditing(true)
-        //lamada a la funcion Register
-        performRegister()
+        //Llamada a la funcion Login
+        performLogin()
     }
     
+    //MARK: LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
     }
-    
+    //MARK: private functions
+    //funcion para aspecto de elementos
     private func setupUI() {
         //Redondear boton
-        registerButton.layer.cornerRadius = 20
+        loginButton.layer.cornerRadius = 20
     }
     
-    private func performRegister(){
+    //función para dar un error si se ha ingresado mal el mail o pass
+    private func performLogin(){
         //validar email
         guard let email = emailTextField.text, !email.isEmpty else{
             NotificationBanner(title: "Error", subtitle: "Correo Inválido", style: .warning).show()
@@ -49,22 +52,12 @@ class RegisterViewController: UIViewController {
             NotificationBanner(title: "Error", subtitle: "Ingrese un Password", style: .warning).show()
             return
         }
-        
-        //validar nombres
-        guard let names = namesTextField.text, !names.isEmpty else{
-            NotificationBanner(title: "Error", subtitle: "Ingrese su nombre completo", style: .warning).show()
-            return
-        }
-        
-        //Crear request
-        let request = RegisterRequest(email: email, password: password, names: names)
-        
-        //Indicar la carga al usuario
+        //Imokantar el request
+        let request = LoginRequest(email: email, password: password)
+        //Icono de carga
         SVProgressHUD.show()
-        
-        //Llamar al servicio
-        
-        SN.post(endpoint: Endpoints.register,
+        // Llamar a  libreria de Red
+        SN.post(endpoint: Endpoints.login,
                 model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
             //Apagar la barra de carga
             SVProgressHUD.dismiss()
@@ -72,9 +65,11 @@ class RegisterViewController: UIViewController {
             switch response {
             case .success(let user):
                 //lo bueno
-                NotificationBanner(subtitle: "Bienvenido \(user.user.names)", style: .success).show()
+                //NotificationBanner(subtitle: "Bienvenido \(user.user.names)", style: .success).show()
                 //Para seguir el segue
                 self.performSegue(withIdentifier: "showHome", sender: nil)
+                //dar la autorizacion al usuario
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
             case .error(let error):
                 //lo malo
                 NotificationBanner(title: "Error" ,subtitle: error.localizedDescription, style: .danger).show()
@@ -86,11 +81,8 @@ class RegisterViewController: UIViewController {
             }
         }
         
-        //Para seguir el segue
-        //performSegue(withIdentifier: "showHome", sender: nil)
+        // Iniciar sesion aqui
         
-        //Iniciar Registro
         
     }
-    
 }

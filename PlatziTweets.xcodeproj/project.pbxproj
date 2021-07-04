@@ -21,6 +21,10 @@
 		3A80C1AF268F60AF00840CF6 /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1AE268F60AF00840CF6 /* PostRequestLocation.swift */; };
 		3A80C1B1268F612000840CF6 /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B0268F612000840CF6 /* PostLocation.swift */; };
 		3A80C1B3268F61E300840CF6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B2268F61E300840CF6 /* Post.swift */; };
+		3A80C1B52690ADAD00840CF6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B42690ADAD00840CF6 /* HomeViewController.swift */; };
+		3A80C1B92690AF1D00840CF6 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1B72690AF1D00840CF6 /* TweetTableViewCell.swift */; };
+		3A80C1BA2690AF1D00840CF6 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A80C1B82690AF1D00840CF6 /* TweetTableViewCell.xib */; };
+		3A80C1BC269253C500840CF6 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80C1BB269253C500840CF6 /* AddPostViewController.swift */; };
 		3A80FA6E268CAB8D00A7F687 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */; };
 		3A80FA70268CC5F200A7F687 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80FA6F268CC5F200A7F687 /* WelcomeViewController.swift */; };
 		3A80FA72268CC60B00A7F687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80FA71268CC60B00A7F687 /* LoginViewController.swift */; };
@@ -47,6 +51,10 @@
 		3A80C1AE268F60AF00840CF6 /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
 		3A80C1B0268F612000840CF6 /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
 		3A80C1B2268F61E300840CF6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3A80C1B42690ADAD00840CF6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A80C1B72690AF1D00840CF6 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		3A80C1B82690AF1D00840CF6 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		3A80C1BB269253C500840CF6 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		3A80FA6D268CAB8D00A7F687 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		3A80FA6F268CC5F200A7F687 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3A80FA71268CC60B00A7F687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +100,10 @@
 		3A80C197268E95A900840CF6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3A80C1B62690AEF400840CF6 /* Cells */,
 				3A80C198268E95BA00840CF6 /* Home.storyboard */,
+				3A80C1B42690ADAD00840CF6 /* HomeViewController.swift */,
+				3A80C1BB269253C500840CF6 /* AddPostViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 			path = Modelo;
 			sourceTree = "<group>";
 		};
+		3A80C1B62690AEF400840CF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A80C1B72690AF1D00840CF6 /* TweetTableViewCell.swift */,
+				3A80C1B82690AF1D00840CF6 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3A80FA6A268CAB3400A7F687 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,13 +154,13 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
-		3A80FA6B268CAB4500A7F687 /* Modules */ = {
+		3A80FA6B268CAB4500A7F687 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				3A80C197268E95A900840CF6 /* Home */,
 				3A80FA6C268CAB6D00A7F687 /* Welcome */,
 			);
-			path = Modules;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3A80FA6C268CAB6D00A7F687 /* Welcome */ = {
@@ -177,7 +197,7 @@
 			children = (
 				3A80C19D268F504A00840CF6 /* Modelo */,
 				3A80C19A268F4F8B00840CF6 /* NetworkManager */,
-				3A80FA6B268CAB4500A7F687 /* Modules */,
+				3A80FA6B268CAB4500A7F687 /* View */,
 				3A80FA6A268CAB3400A7F687 /* Commons */,
 				3A9CD576268B6C59001533F8 /* Info.plist */,
 			);
@@ -243,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80C1BA2690AF1D00840CF6 /* TweetTableViewCell.xib in Resources */,
 				3A9CD575268B6C59001533F8 /* LaunchScreen.storyboard in Resources */,
 				3A9CD572268B6C59001533F8 /* Assets.xcassets in Resources */,
 				3A80FA6E268CAB8D00A7F687 /* Welcome.storyboard in Resources */,
@@ -304,6 +325,8 @@
 				3A80C1A7268F584A00840CF6 /* RegisterRequest.swift in Sources */,
 				3A80FA72268CC60B00A7F687 /* LoginViewController.swift in Sources */,
 				3A80C1B3268F61E300840CF6 /* Post.swift in Sources */,
+				3A80C1B92690AF1D00840CF6 /* TweetTableViewCell.swift in Sources */,
+				3A80C1B52690ADAD00840CF6 /* HomeViewController.swift in Sources */,
 				3A80FA74268CC81F00A7F687 /* RegisterViewController.swift in Sources */,
 				3A80FA70268CC5F200A7F687 /* WelcomeViewController.swift in Sources */,
 				3A80C1AF268F60AF00840CF6 /* PostRequestLocation.swift in Sources */,
@@ -313,6 +336,7 @@
 				3A80C1A1268F548500840CF6 /* LoginResponse.swift in Sources */,
 				3A80C1A9268F588700840CF6 /* RegisterResponse.swift in Sources */,
 				3A80C1B1268F612000840CF6 /* PostLocation.swift in Sources */,
+				3A80C1BC269253C500840CF6 /* AddPostViewController.swift in Sources */,
 				3A80C1AB268F5E8200840CF6 /* GeneralResponse.swift in Sources */,
 				3A80C1A5268F54D900840CF6 /* User.swift in Sources */,
 				3A9CD569268B6C52001533F8 /* AppDelegate.swift in Sources */,
